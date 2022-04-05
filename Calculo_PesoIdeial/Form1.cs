@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculo_PesoIdeial
@@ -34,6 +27,39 @@ namespace Calculo_PesoIdeial
         private void btnSairX_Click(object sender, EventArgs e)
         {
             this.Close(); // Fecha programa
+        }
+
+        private void btnPesoIdeal_Click(object sender, EventArgs e)
+        {
+            try
+            { 
+                // Variaveis
+                Double Altura, PesoIdeal;
+
+                // Altura recebe o texto da 'txtAltura'
+                Altura = double.Parse(txtAltura.Text);
+
+                // Se cmbSexo for igual a "Feminino"
+                if (cmbSexo.Text == "Feminino")
+                {
+                    PesoIdeal = (62.7 * Altura) - 44.7; // Calculo do peso
+                    MessageBox.Show(txtNome.Text + "seu peso ideal é: " + PesoIdeal.ToString() + " KG", "Peso Ideal", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (cmbSexo.Text == "Masculino")
+                {
+                    PesoIdeal = (72.7 * Altura) - 58; // Calculo do peso
+                    MessageBox.Show(txtNome.Text + "seu peso ideal é: " + PesoIdeal.ToString() + " KG", "Peso Ideal", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Sexo invalido", "Peso Ideal", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Verifique os valores informados", "Peso Ideal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

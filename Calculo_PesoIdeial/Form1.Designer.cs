@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtNome = new System.Windows.Forms.TextBox();
             this.cmbSexo = new System.Windows.Forms.ComboBox();
-            this.txtAltura = new System.Windows.Forms.TextBox();
             this.btnPesoIdeal = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.btnSairX = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtAltura = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txtNome
@@ -62,13 +62,6 @@
             this.cmbSexo.Size = new System.Drawing.Size(151, 35);
             this.cmbSexo.TabIndex = 1;
             // 
-            // txtAltura
-            // 
-            this.txtAltura.Location = new System.Drawing.Point(116, 240);
-            this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(143, 36);
-            this.txtAltura.TabIndex = 2;
-            // 
             // btnPesoIdeal
             // 
             this.btnPesoIdeal.BackColor = System.Drawing.Color.Transparent;
@@ -82,6 +75,7 @@
             this.btnPesoIdeal.TabIndex = 3;
             this.btnPesoIdeal.Text = "Peso Ideal";
             this.btnPesoIdeal.UseVisualStyleBackColor = false;
+            this.btnPesoIdeal.Click += new System.EventHandler(this.btnPesoIdeal_Click);
             // 
             // btnLimpar
             // 
@@ -206,6 +200,14 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Gui1535";
             // 
+            // txtAltura
+            // 
+            this.txtAltura.Location = new System.Drawing.Point(116, 241);
+            this.txtAltura.Mask = "0.00";
+            this.txtAltura.Name = "txtAltura";
+            this.txtAltura.Size = new System.Drawing.Size(151, 36);
+            this.txtAltura.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -213,6 +215,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(948, 553);
+            this.Controls.Add(this.txtAltura);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSairX);
@@ -223,7 +226,6 @@
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnPesoIdeal);
-            this.Controls.Add(this.txtAltura);
             this.Controls.Add(this.cmbSexo);
             this.Controls.Add(this.txtNome);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -241,7 +243,6 @@
 
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.ComboBox cmbSexo;
-        private System.Windows.Forms.TextBox txtAltura;
         private System.Windows.Forms.Button btnPesoIdeal;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSair;
@@ -252,6 +253,7 @@
         private System.Windows.Forms.Button btnSairX;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MaskedTextBox txtAltura;
     }
 }
 
