@@ -48,7 +48,7 @@ namespace Calculo_PesoIdeial
                 else if (cmbSexo.Text == "Masculino")
                 {
                     PesoIdeal = (72.7 * Altura) - 58; // Calculo do peso
-                    MessageBox.Show(txtNome.Text + "seu peso ideal é: " + PesoIdeal.ToString() + " KG", "Peso Ideal", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(txtNome.Text + " seu peso ideal é: " + PesoIdeal.ToString() + " KG", "Peso Ideal", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {

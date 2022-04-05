@@ -145,15 +145,17 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(204, 21);
+            this.label4.Location = new System.Drawing.Point(227, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(585, 56);
             this.label4.TabIndex = 9;
             this.label4.Text = "CALCULE SEU PESO IDEAL";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnSairX
             // 
