@@ -39,9 +39,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSairX = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtAltura = new System.Windows.Forms.MaskedTextBox();
+            this.btnGitGui = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNome
@@ -65,9 +64,10 @@
             // btnPesoIdeal
             // 
             this.btnPesoIdeal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPesoIdeal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesoIdeal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesoIdeal.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesoIdeal.ForeColor = System.Drawing.Color.White;
+            this.btnPesoIdeal.ForeColor = System.Drawing.Color.Transparent;
             this.btnPesoIdeal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPesoIdeal.Location = new System.Drawing.Point(116, 311);
             this.btnPesoIdeal.Name = "btnPesoIdeal";
@@ -80,9 +80,10 @@
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.Transparent;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpar.ForeColor = System.Drawing.Color.Transparent;
             this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLimpar.Location = new System.Drawing.Point(332, 311);
             this.btnLimpar.Name = "btnLimpar";
@@ -95,9 +96,10 @@
             // btnSair
             // 
             this.btnSair.BackColor = System.Drawing.Color.Transparent;
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.ForeColor = System.Drawing.Color.Transparent;
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSair.Location = new System.Drawing.Point(116, 390);
             this.btnSair.Name = "btnSair";
@@ -162,6 +164,7 @@
             this.btnSairX.BackColor = System.Drawing.Color.Transparent;
             this.btnSairX.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSairX.BackgroundImage")));
             this.btnSairX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSairX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairX.FlatAppearance.BorderSize = 0;
             this.btnSairX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSairX.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -174,34 +177,6 @@
             this.btnSairX.UseVisualStyleBackColor = false;
             this.btnSairX.Click += new System.EventHandler(this.btnSairX_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(804, 514);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(48, 36);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(848, 523);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 27);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Gui1535";
-            // 
             // txtAltura
             // 
             this.txtAltura.Location = new System.Drawing.Point(116, 241);
@@ -210,16 +185,34 @@
             this.txtAltura.Size = new System.Drawing.Size(151, 36);
             this.txtAltura.TabIndex = 13;
             // 
+            // btnGitGui
+            // 
+            this.btnGitGui.BackColor = System.Drawing.Color.Transparent;
+            this.btnGitGui.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGitGui.BackgroundImage")));
+            this.btnGitGui.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnGitGui.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGitGui.FlatAppearance.BorderSize = 0;
+            this.btnGitGui.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGitGui.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGitGui.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGitGui.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGitGui.Location = new System.Drawing.Point(820, 512);
+            this.btnGitGui.Name = "btnGitGui";
+            this.btnGitGui.Size = new System.Drawing.Size(129, 43);
+            this.btnGitGui.TabIndex = 14;
+            this.btnGitGui.UseVisualStyleBackColor = false;
+            this.btnGitGui.Click += new System.EventHandler(this.btnGitGui_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(948, 553);
+            this.Controls.Add(this.btnGitGui);
             this.Controls.Add(this.txtAltura);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSairX);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -231,6 +224,7 @@
             this.Controls.Add(this.cmbSexo);
             this.Controls.Add(this.txtNome);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Form1";
@@ -253,9 +247,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnSairX;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox txtAltura;
+        private System.Windows.Forms.Button btnGitGui;
     }
 }
 

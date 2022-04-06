@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Calculo_PesoIdeial
@@ -60,6 +61,12 @@ namespace Calculo_PesoIdeial
             {
                 MessageBox.Show("Verifique os valores informados", "Peso Ideal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnGitGui_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/gui1535");
+        
         }
     }
 }
